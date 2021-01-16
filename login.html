@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Leathers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="https://kit.fontawesome.com/b206c9f766.js"></script>
+</head>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-flex-container">
+                <div class="nav-logo">
+                    <img src="./images/imperial-leather-logo.png" alt="Imperial Leather Logo">
+                </div>
+                
+                <ul class="navbar-list">
+                    <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="nav-text"> Home</span></a></li>
+                    <li><a href="./login.html"><i class="fa fa-user-circle" aria-hidden="true"></i><span class="nav-text"> Log In</span></a></li>
+                    <li><a href="./index.html#footer"><i class="far fa-address-book"></i><span class="nav-text"> Contact Us</span></a></li>
+                    <li><a href="./products.html"><i class="fa fa-cart-plus" aria-hidden="true"></i><span class="nav-text"> Add To Cart</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LOGIN FORM -->
+    <section class="login-interface">
+        <div class="form-background">
+            <div class="form-content">
+                <p class="user-avatar"><i class="fa fa-user-circle" aria-hidden="true"></i></p>
+                <p class="user-login-text"><strong>Sign In To Complete Your Order</strong></p>
+                <form class="login-form" name="subscribe" method="POST" data-netlify="true">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Enter Your E-mail" required class="txt">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter Your Password" required class="txt">
+                    <button>Sign In</button>
+
+                    <div class="remember-me">
+                        <label>Remember Me</label><input type="checkbox">
+                    </div>
+
+                    <label for="forgot-password">Forgot Password?&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Click Here</a></label>
+                </form>
+                <div class="sign-up">
+                    <label>Are You A New User?</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

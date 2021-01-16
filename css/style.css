@@ -1,0 +1,853 @@
+/*UNIVERSAL STYLES*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: floralwhite;
+    box-sizing: border-box;
+    line-height: 1.2rem;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/*VIEWPORT LANDING PAGE*/
+.viewport-landing{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/viewport-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0; left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.viewport-landing:before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.viewport-landing:after{
+    content: "";
+    width: 92%;
+    height: 86%;
+    border: 1px solid white;
+    position: absolute;
+    top: 2.5%; left: 4%;
+    z-index: 5;
+}
+
+.viewport-title{
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.viewport-title h2{
+    color: white;
+    text-shadow: 1px 1px 2px goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.leather-style{
+    color: goldenrod;
+    text-shadow: none;
+}
+
+.viewport-title h3{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.viewport-title p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.no-one{
+    color: goldenrod;
+    text-shadow: 3px 3px 4px black;
+    font-weight: bold;
+}
+
+.viewport-btn a{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 20%;
+    font-size: 18px;
+}
+
+.viewport-btn a:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+/*STICKY NAVBAR*/
+.navbar{
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 8px black;
+    position: sticky;
+    top: 0; left: 0;
+    z-index: 100;
+}
+
+.navbar-flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-logo img{
+    width: 125px;
+}
+
+.navbar-list{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-text{
+    display: none;
+}
+
+.navbar-list li{
+    list-style-type: none;
+
+}
+
+.navbar-list li a{
+    text-decoration: none;
+    font-size: 24px;
+    color:rgb(73, 87, 87);
+    display: inline-block;
+    margin-left: 8px;
+    padding: 10px 5px;
+    transition: all 0.25s ease-in;
+}
+
+.navbar-list li a:hover{
+    color: goldenrod;
+}
+
+/*ABOUT US*/
+.about-us h1{
+    color: rgb(73, 87, 87);
+    text-shadow: 1px 1px 2px goldenrod;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.about-us p{
+    color:black;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.about-us .sboj-btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-us .sboj-btn a{
+    text-decoration: none;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 2px rgb(73, 87, 87);
+}
+
+.about-us .sboj-btn a:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+/*PRODUCT DISPLAY*/
+.gender-products-title{
+    color: rgb(73, 87, 87);
+    text-shadow: 1px 1px 2px goldenrod;
+    margin: 70px 0 40px 0;
+    text-align: center;
+}
+
+div.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-content: center;
+}
+
+.product-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right, top;
+    width: 310px;
+    height: 360px;
+    margin: auto;
+    position: relative;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.product-img:hover{
+    transform: scale(1.05);
+}
+
+.product-img-1{
+    background-image: url(../images/italian-leather.jpg);
+}
+
+.product-img-2{
+    background-image: url(../images/leather-jacket.jpg);
+}
+
+.product-img-3{
+    background-image: url(../images/leather-bag.jpg);
+}
+
+.product-img-4{
+    background-image: url(../images/wrist-watch.jpg);
+}
+
+.product-img-5{
+    background-image: url(../images/smart-belt.jpg);
+    background-position: left, bottom;
+}
+
+.product-img-6{
+    background-image: url(../images/travel-light.jpg);
+    background-position: -70px, top;
+}
+
+.product-img-7{
+    background-image: url(../images/everyday-man.jpg);
+}
+
+.product-img-8{
+    background-image: url(../images/excelsio-watch.jpg);
+    background-position: -70px, bottom;
+}
+
+.product-img-9{
+    background-image: url(../images/full-leather-armour.jpg);
+    background-position: -70px, bottom;
+}
+
+.product-img-10{
+    background-image: url(../images/leather-purse.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-1{
+    background-image: url(../images/women/women-leatherboot.jpg);
+}
+
+.w-product-img-2{
+    background-image: url(../images/women/leather-waist-belt.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-3{
+    background-image: url(../images/women/travel-bag.jpg);
+    background-position: left, bottom;
+}
+
+.w-product-img-4{
+    background-image: url(../images/women/rielson-handpurse.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-5{
+    background-image: url(../images/women/light-modern-handbag.jpg);
+    background-position: left, bottom;
+}
+
+.w-product-img-6{
+    background-image: url(../images/women/leather-necklace.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-7{
+    background-image: url(../images/women/jq-leather-watch.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-8{
+    background-image: url(../images/women/highend-jumpsuit.jpg);
+    background-position: bottom;
+}
+
+.w-product-img-9{
+    background-image: url(../images/women/everywoman-backpack.jpg);
+    background-position: left, bottom;
+}
+
+.w-product-img-10{
+    background-image: url(../images/women/broche-leathershoe.jpg);
+    background-position: left, bottom;
+}
+
+.product-img-3, .product-img-4, .product-img-5, .product-img-6, .product-img-7, .product-img-8, .product-img-9, .product-img-10, .w-product-img-3, .w-product-img-4, .w-product-img-5, .w-product-img-6, .w-product-img-7, .w-product-img-8, .w-product-img-9, .w-product-img-10{
+    display: none;
+}
+
+.product-img i{
+    color: black;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.product-text{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.product-text h2{
+    margin: 5px auto 5px 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.product-text h2 del{
+    font-family: monospace;
+    color: red;
+    font-weight: 100;
+}
+
+.product-text hr{
+    width: 60%;
+}
+
+.product-text h1{
+    font-family: monospace;
+    text-align: left;
+    margin: 5px auto 0px 10px;
+}
+
+.product-text h1 span{
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px goldenrod;
+}
+
+.product-text p{
+    font-style: 14px;
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.view-more-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.view-more-btn button{
+    border-style: none;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.view-more-btn button:hover{
+    color: white;
+    background-color: goldenrod;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: rgb(0, 0, 0, 0.9);
+    margin: 50px 0px 0px 0px;
+    padding: 20px 0px;
+}
+
+.footer-email-content{
+    margin: auto;
+}
+
+.footer-email-content p{
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer-email-content div{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-email-content input{
+    flex: 2;
+    display: inline-block;
+    background-color: rgb(73, 87, 87);
+    font-size: 15px;
+    padding-left: 5px;
+    border-style: none;
+}
+
+.footer-email-content button{
+    flex: 1;
+    font-size: 15px;
+    border-style: none;
+    height: 32px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
+.footer-contact-us{
+    display: grid;
+    grid-template-areas:
+    "socials"
+    "countries"
+    "partner-companies"
+    "copyright";
+    justify-content: center;
+}
+
+.socials{
+    margin: 15px 0px;
+}
+
+.socials p{
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.socials a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.socials i{
+    color: goldenrod;
+}
+
+.countries{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.countries p{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.country-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.country-grid img{
+    align-self: center;
+    width: 35px;
+    margin: 3px;
+}
+
+.partner-companies{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.partner-companies p{
+    color: rgb(73, 87, 87);
+    text-shadow: 1px 1px 2px goldenrod;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.partner-companies-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partner-companies-grid img{
+    width: 50px;
+    margin: 5px;
+}
+
+.copyright{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.copy-right{
+    color: goldenrod;
+}
+
+/* =================================================600 VIEWPORTS=================================================*/
+@media only screen and (min-width: 600px){
+/*UNIVERSAL STYLES*/
+body{
+    background-color: floralwhite;
+}
+
+.container{
+    width: 80%;
+}
+    
+/*VIEWPORT LANDING PAGE*/
+.viewport-title h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.viewport-btn a{
+    padding: 10px 35px;
+}
+
+/*STICKY NAVBAR*/
+.navbar-flex-container{
+    height: 80px;
+}
+
+.nav-logo img{
+    width: 180px;
+}
+
+.navbar-list li a{
+    font-size: 30px;
+    padding: 10px 15px;
+}
+
+/*ABOUT US*/
+.about-us h1{
+    margin: 35px 0;
+}
+
+.about-us p{
+    font-size: 18px;
+    line-height: 2.0rem;
+}
+
+.about-us .sboj-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-us .sboj-btn a{
+    padding: 10px 40px;
+}
+
+/*PRODUCT DISPLAY*/
+
+div.grid-container{
+    gap: 50px;
+}
+
+.product-img{
+    width: 360px;
+    height: 410px;
+}
+
+.product-img i{
+    font-size: 25px;
+}
+
+.product-text{
+    height: 110px;
+}
+
+
+.product-text h1 span{
+    font-size: 16px;
+}
+
+.view-more-btn{
+    margin-top: 40px;
+}
+
+.view-more-btn button{
+    font-size: 16px;
+}
+
+/*FOOTER*/
+.footer{
+    margin: 70px 0px 0px 0px;
+    padding: 20px 0px;
+}
+
+.socials{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.country-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.country-grid img{
+    width: 50px;
+    margin: 5px;
+}
+
+.partner-companies{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.partner-companies p{
+    font-size: 18px;
+}
+
+.partner-companies-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.partner-companies-grid img{
+    width: 70px;
+    margin: 10px;
+}
+
+.copyright{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.copy-right{
+    color: goldenrod;
+}
+
+}
+
+/* =================================================768 VIEWPORTS=================================================*/
+
+@media only screen and (min-width: 768px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    
+    /*VIEWPORT LANDING PAGE*/    
+    .viewport-title h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .viewport-title h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .viewport-title p{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    
+    .viewport-btn a{
+        padding: 10px 45px;
+    }
+    
+    /*STICKY NAVBAR*/
+    .navbar-list li a{
+        font-size: 32px;
+        padding: 10px 20px;
+    }
+
+    /*ABOUT US*/
+    .about-us h1{
+        margin: 40px 0;
+    }
+
+    .about-us .sboj-btn{
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    /*PRODUCT DISPLAY*/
+    div.grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-img-3, .product-img-4, .w-product-img-3, .w-product-img-4{
+        display: unset;
+    }
+
+    .product-img{
+        width: 310px;
+        height: 360px;
+    }
+
+    .product-text h1{
+        font-size: 18px;
+    }
+
+    .product-text h1 span{
+        font-size: 14px;
+    }
+
+    .product-img i{
+        right: 10px;
+        bottom: 60px;
+    }
+
+}
+
+/* =================================================768 VIEWPORTS=================================================*/
+
+@media only screen and (min-width: 768px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    
+    /*VIEWPORT LANDING PAGE*/    
+    .viewport-title h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    
+    .viewport-title h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .viewport-title p{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    
+    .viewport-btn a{
+        padding: 10px 45px;
+    }
+    
+    /*STICKY NAVBAR*/
+    .navbar-list li a{
+        font-size: 32px;
+        padding: 10px 20px;
+    }
+
+    /*ABOUT US*/
+    .about-us h1{
+        margin: 40px 0;
+    }
+
+    .about-us .sboj-btn{
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    /*PRODUCT DISPLAY*/
+    div.grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-img-3, .product-img-4, .w-product-img-3, .w-product-img-4{
+        display: unset;
+    }
+
+    .product-img{
+        width: 310px;
+        height: 360px;
+    }
+
+    .product-text h1{
+        font-size: 18px;
+    }
+
+    .product-text h1 span{
+        font-size: 14px;
+    }
+
+    .product-img i{
+        right: 10px;
+        bottom: 60px;
+    }
+
+}
+
+/* =================================================1024 VIEWPORTS=================================================*/
+
+@media only screen and (min-width: 1024px){
+    .nav-text{
+        display: unset;
+    }
+    
+    .navbar-list li a{
+        font-size: 18px;
+        display: inline-block;
+        margin-left: 30px;
+        padding: 10px 0px;
+    }
+    
+}
+
+/* =================================================1284 VIEWPORTS=================================================*/
+
+@media only screen and (min-width: 1284px){
+    .navbar-list li a{
+        margin-left: 40px;
+    }    
+        /*PRODUCT DISPLAY*/
+    div.grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-img-3, .product-img-4, .product-img-5, .product-img-6, .w-product-img-3, .w-product-img-4, .w-product-img-5, .w-product-img-6{
+        display: unset;
+    }
+
+}
